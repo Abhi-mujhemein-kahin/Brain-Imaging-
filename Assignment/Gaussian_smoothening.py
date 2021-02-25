@@ -19,3 +19,10 @@ plt.imshow(less_blurred)
 plt.show()
 plt.hist(less_blurred, bins = 10)
 plt.show()
+
+three_blurred = ndimage.gaussian_filter(brain, sigma=20)
+three_blurred.shape
+plt.imshow(three_blurred)
+plt.show()
+plt.hist(three_blurred, bins = 10)
+plt.show()
