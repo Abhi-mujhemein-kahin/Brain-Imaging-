@@ -17,21 +17,21 @@ plt.show() #Display the histogram
 
 #Begin performing Gaussian Smoothening
 one_blurred = ndimage.gaussian_filter(brain, sigma=5) #Image is passed through Gaussian filter with sigma = 5
-least_blurred.shape #Dimensions of the smoothened image
-plt.imshow(least_blurred, cmap='Greys_r') #Smoothened image is drawn by the program
+one_blurred.shape #Dimensions of the smoothened image
+plt.imshow(one_blurred, cmap='Greys_r') #Smoothened image is drawn by the program
 plt.show() #Drawn image is displayed
 #Save the image
 #Close the file
 
-plt.hist(least_blurred, bins=10) #Construct the histogram for the smoothened image
+plt.hist(one_blurred, bins=10) #Construct the histogram for the smoothened image
 plt.show() #Display the histogram
 #Manually save the image as a .png file.
 #Manually close the image in order to execute the rest of the commands.
 
 #Gaussian Smoothening when Sigma = 10
 two_blurred = ndimage.gaussian_filter(brain, sigma=10) #Image is passed through Gaussian filter with sigma = 10
-less_blurred.shape #Obtain dimensions of smoothened image
-plt.imshow(less_blurred, cmap='Greys_r') #Smoothened image is drawn by the program
+two_blurred.shape #Obtain dimensions of smoothened image
+plt.imshow(two_blurred, cmap='Greys_r') #Smoothened image is drawn by the program
 plt.show() #Drawn image is displayed
 #Manually save the image as a .png file.
 #Manually close the image in order to execute the rest of the commands.
