@@ -29,3 +29,6 @@ expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
+# Data file name stem = absolute path + name; later add extensions like .psyexp, .csv, .log, etc
+filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+
