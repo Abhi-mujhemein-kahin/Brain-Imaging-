@@ -32,3 +32,15 @@ expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add extensions like .psyexp, .csv, .log, etc
 filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
 
+# An ExperimentHandler helps to keep track of multiple loops within the file.
+thisExp = data.ExperimentHandler(name=expName, version='',
+    extraInfo=expInfo, runtimeInfo=None,
+    originPath='C:\\Users\\abhin\\OneDrive\\Desktop\\Dictator game\\dictator game.py',
+    savePickle=True, saveWideText=True,
+    dataFileName=filename)
+
+# save a log file for detail verbose info
+logFile = logging.LogFile(filename+'.log', level=logging.EXP)
+logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
+
+
