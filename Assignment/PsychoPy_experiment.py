@@ -43,4 +43,21 @@ thisExp = data.ExperimentHandler(name=expName, version='',
 logFile = logging.LogFile(filename+'.log', level=logging.EXP)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
 
+endExpNow = False  # If Esc is pressed, experiment will be quit
+frameTolerance = 0.001  # how close to onset before 'same' frame
+
+# Setup the Window
+win = visual.Window(
+    size=[1280, 720], fullscr=True, screen=0, 
+    winType='pyglet', allowGUI=False, allowStencil=False,
+    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+    blendMode='avg', useFBO=True, 
+    units='height')
+# store frame rate of monitor if we can measure it
+expInfo['frameRate'] = win.getActualFrameRate()
+if expInfo['frameRate'] != None:
+    frameDur = 1.0 / round(expInfo['frameRate'])
+else:
+    frameDur = 1.0 / 60.0  # could not measure, so guess
+
 
