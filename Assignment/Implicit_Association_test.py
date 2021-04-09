@@ -377,3 +377,12 @@ for thisInstruct_page in instruct_pages:
     instruct_pages.addData('instr_done_touch.leftButton', buttons[0])
     instruct_pages.addData('instr_done_touch.midButton', buttons[1])
     instruct_pages.addData('instr_done_touch.rightButton', buttons[2])
+    
+    if len(instr_done_touch.clicked_name):
+        instruct_pages.addData('instr_done_touch.clicked_name', instr_done_touch.clicked_name[0])
+    instruct_pages.addData('instr_done_touch.started', instr_done_touch.tStart)
+    instruct_pages.addData('instr_done_touch.stopped', instr_done_touch.tStop)
+    # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+# completed 1 repeats of 'instruct_pages'
+    
