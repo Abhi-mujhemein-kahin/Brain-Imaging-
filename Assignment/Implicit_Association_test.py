@@ -29,3 +29,6 @@ if dlg.OK == False:
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
+
+# Data file name stem = absolute path + name; later add extensions
+filename = _thisDir + os.sep + u'data' + os.path.sep + '%s_%s' %(expInfo['participant'], expInfo['date'])
