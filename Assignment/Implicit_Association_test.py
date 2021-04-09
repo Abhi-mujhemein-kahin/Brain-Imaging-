@@ -794,3 +794,15 @@ for thisBlock in blocks:
         if len(touch_resp.clicked_name): trials.addData('touch_resp.clicked_name', touch_resp.clicked_name[0])
         trials.addData('touch_resp.started', touch_resp.tStart)
         trials.addData('touch_resp.stopped', touch_resp.tStop)
+# check if correct (either mouse or keyboard)
+        if key_resp.keys:
+            corr = key_resp.corr
+            rt = key_resp.rt
+        else:
+            rt = touch_resp.time[0]  # annoyingly mouse is a list of rts
+            if (('left' in touch_resp.clicked_name[0] and CorrAns=='a') or
+                ('right' in touch_resp.clicked_name[0] and CorrAns=='l')):
+                corr = 1
+            else:
+                corr = 0
+        
