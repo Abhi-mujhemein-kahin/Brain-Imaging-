@@ -212,4 +212,8 @@ thanks_text = visual.TextStim(win=win, name='thanks_text',
     languageStyle='LTR',
     depth=0.0);
 
+# Create some handy timers
+globalClock = core.Clock()  # to track the time since experiment started
+routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
+
 
