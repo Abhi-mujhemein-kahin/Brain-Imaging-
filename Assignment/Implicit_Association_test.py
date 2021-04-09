@@ -404,3 +404,29 @@ for thisBlock in blocks:
     if thisBlock != None:
         for paramName in thisBlock:
             exec('{} = thisBlock[paramName]'.format(paramName))
+
+# ------Prepare to start Routine "ready"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    ready_label_L.setText(label_left)
+    ready_label_R.setText(label_right)
+    # setup some python lists for storing info about the ready_done_mouse
+    ready_done_mouse.clicked_name = []
+    gotValidClick = False  # until a click is received
+    ready_done.keys = []
+    ready_done.rt = []
+    _ready_done_allKeys = []
+    # keep track of which components have finished
+    readyComponents = [main_ready_msg, button_L, ready_label_L, button_R, ready_label_R, ready_done_mouse, ready_done]
+    for thisComponent in readyComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    readyClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
