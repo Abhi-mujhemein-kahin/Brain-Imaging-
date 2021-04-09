@@ -45,3 +45,13 @@ logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a f
 
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
 frameTolerance = 0.001  # how close to onset before 'same' frame
+
+# Start Code - component code to be run after the window creation
+
+# Setup the Window
+win = visual.Window(
+    size=[1920, 1080], fullscr=True, screen=0, 
+    winType='pyglet', allowGUI=False, allowStencil=False,
+    monitor='testMonitor', color='black', colorSpace='rgb',
+    blendMode='avg', useFBO=True, 
+    units='height')
