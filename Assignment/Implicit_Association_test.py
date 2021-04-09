@@ -216,4 +216,14 @@ thanks_text = visual.TextStim(win=win, name='thanks_text',
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
-
+# set up handler to look after randomisation of conditions etc
+instruct_pages = data.TrialHandler(nReps=1, method='sequential', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=data.importConditions('instructs.xlsx'),
+    seed=None, name='instruct_pages')
+thisExp.addLoop(instruct_pages)  # add the loop to the experiment
+thisInstruct_page = instruct_pages.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisInstruct_page.rgb)
+if thisInstruct_page != None:
+    for paramName in thisInstruct_page:
+        exec('{} = thisInstruct_page[paramName]'.format(paramName))
