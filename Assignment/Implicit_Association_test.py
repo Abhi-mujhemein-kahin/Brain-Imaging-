@@ -571,3 +571,22 @@ for thisBlock in blocks:
         if thisTrial != None:
             for paramName in thisTrial:
                 exec('{} = thisTrial[paramName]'.format(paramName))
+ # ------Prepare to start Routine "trial"-------
+        continueRoutine = True
+        # update component parameters for each repeat
+        image_stim.setImage(stimImage)
+        text_stim.setText(stimWord)
+        key_resp.keys = []
+        key_resp.rt = []
+        _key_resp_allKeys = []
+        # setup some python lists for storing info about the touch_resp
+        touch_resp.x = []
+        touch_resp.y = []
+        touch_resp.leftButton = []
+        touch_resp.midButton = []
+        touch_resp.rightButton = []
+        touch_resp.time = []
+        touch_resp.clicked_name = []
+        gotValidClick = False  # until a click is received
+        trial_label_left.setText(label_left)
+        trial_label_right.setText(label_right)
