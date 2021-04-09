@@ -605,3 +605,140 @@ for thisBlock in blocks:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
+# -------Run Routine "trial"-------
+        while continueRoutine:
+            # get current time
+            t = trialClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=trialClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *fixation* updates
+            if fixation.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                fixation.frameNStart = frameN  # exact frame index
+                fixation.tStart = t  # local t and not account for scr refresh
+                fixation.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fixation, 'tStartRefresh')  # time at next scr refresh
+                fixation.setAutoDraw(True)
+            if fixation.status == STARTED:
+                # is it time to stop? (based on local clock)
+                if tThisFlip > 0.5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    fixation.tStop = t  # not accounting for scr refresh
+                    fixation.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(fixation, 'tStopRefresh')  # time at next scr refresh
+                    fixation.setAutoDraw(False)
+            
+            # *image_stim* updates
+            if image_stim.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                image_stim.frameNStart = frameN  # exact frame index
+                image_stim.tStart = t  # local t and not account for scr refresh
+                image_stim.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(image_stim, 'tStartRefresh')  # time at next scr refresh
+                image_stim.setAutoDraw(True)
+            
+            # *text_stim* updates
+            if text_stim.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                text_stim.frameNStart = frameN  # exact frame index
+                text_stim.tStart = t  # local t and not account for scr refresh
+                text_stim.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_stim, 'tStartRefresh')  # time at next scr refresh
+                text_stim.setAutoDraw(True)
+            
+            # *key_resp* updates
+            waitOnFlip = False
+            if key_resp.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                key_resp.frameNStart = frameN  # exact frame index
+                key_resp.tStart = t  # local t and not account for scr refresh
+                key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+                key_resp.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
+                _key_resp_allKeys.extend(theseKeys)
+                if len(_key_resp_allKeys):
+                    key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
+                    key_resp.rt = _key_resp_allKeys[-1].rt
+                    # was this correct?
+                    if (key_resp.keys == str(CorrAns)) or (key_resp.keys == CorrAns):
+                        key_resp.corr = 1
+                    else:
+                        key_resp.corr = 0
+                    # a response ends the routine
+                    continueRoutine = False
+            # *touch_resp* updates
+            if touch_resp.status == NOT_STARTED and t >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                touch_resp.frameNStart = frameN  # exact frame index
+                touch_resp.tStart = t  # local t and not account for scr refresh
+                touch_resp.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(touch_resp, 'tStartRefresh')  # time at next scr refresh
+                touch_resp.status = STARTED
+                touch_resp.mouseClock.reset()
+                prevButtonState = touch_resp.getPressed()  # if button is down already this ISN'T a new click
+            if touch_resp.status == STARTED:  # only update if started and not finished!
+                buttons = touch_resp.getPressed()
+                if buttons != prevButtonState:  # button state changed?
+                    prevButtonState = buttons
+                    if sum(buttons) > 0:  # state changed to a new click
+                        # check if the mouse was inside our 'clickable' objects
+                        gotValidClick = False
+                        for obj in [button_left, button_right]:
+                            if obj.contains(touch_resp):
+                                gotValidClick = True
+                                touch_resp.clicked_name.append(obj.name)
+                        x, y = touch_resp.getPos()
+                        touch_resp.x.append(x)
+                        touch_resp.y.append(y)
+                        buttons = touch_resp.getPressed()
+                        touch_resp.leftButton.append(buttons[0])
+                        touch_resp.midButton.append(buttons[1])
+                        touch_resp.rightButton.append(buttons[2])
+                        touch_resp.time.append(touch_resp.mouseClock.getTime())
+                        if gotValidClick:  # abort routine on response
+                            continueRoutine = False
+            
+            # *button_left* updates
+            if button_left.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                button_left.frameNStart = frameN  # exact frame index
+                button_left.tStart = t  # local t and not account for scr refresh
+                button_left.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(button_left, 'tStartRefresh')  # time at next scr refresh
+                button_left.setAutoDraw(True)
+            
+            # *trial_label_left* updates
+            if trial_label_left.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                trial_label_left.frameNStart = frameN  # exact frame index
+                trial_label_left.tStart = t  # local t and not account for scr refresh
+                trial_label_left.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(trial_label_left, 'tStartRefresh')  # time at next scr refresh
+                trial_label_left.setAutoDraw(True)
+            
+            # *button_right* updates
+            if button_right.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                button_right.frameNStart = frameN  # exact frame index
+                button_right.tStart = t  # local t and not account for scr refresh
+                button_right.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(button_right, 'tStartRefresh')  # time at next scr refresh
+                button_right.setAutoDraw(True)
+            
+            # *trial_label_right* updates
+            if trial_label_right.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                trial_label_right.frameNStart = frameN  # exact frame index
+                trial_label_right.tStart = t  # local t and not account for scr refresh
+                trial_label_right.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(trial_label_right, 'tStartRefresh')  # time at next scr refresh
+                trial_label_right.setAutoDraw(True)
