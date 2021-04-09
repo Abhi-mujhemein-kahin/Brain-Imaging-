@@ -342,3 +342,7 @@ for thisInstruct_page in instruct_pages:
                             instr_done_touch.clicked_name.append(obj.name)
                     if gotValidClick:  # abort routine on response
                         continueRoutine = False
+   
+  # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
