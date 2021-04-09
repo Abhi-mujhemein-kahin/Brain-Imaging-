@@ -242,3 +242,17 @@ for thisInstruct_page in instruct_pages:
     instruct_done.keys = []
     instruct_done.rt = []
     _instruct_done_allKeys = []
+
+# setup some python lists for storing info about the instr_done_touch
+    instr_done_touch.clicked_name = []
+    gotValidClick = False  # until a click is received
+    # keep track of which components have finished
+    instructionsComponents = [instructs_text, instruct_done, instr_done_button, instr_done_label, instr_done_touch]
+    for thisComponent in instructionsComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+ 
