@@ -65,3 +65,34 @@ else:
 
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard()
+
+# Initialize components for Routine "instructions"
+instructionsClock = core.Clock()
+if expInfo['order']=='random':
+    expInfo['order'] = randint(1,2)
+    
+blocks_file = "blocks_order"+str(expInfo['order'])+".xlsx" #Adding excel sheet for the order of the blocks.
+instructs_text = visual.TextStim(win=win, name='instructs_text', #loops over instructions from instructs_text
+    text='',
+    font='Arial',
+    units='height', pos=[0, 0], height=0.03, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+instruct_done = keyboard.Keyboard()
+instr_done_button = visual.Rect(
+    win=win, name='instr_done_button',units='height', 
+    width=(0.4, 0.1)[0], height=(0.4, 0.1)[1],
+    ori=0, pos=(0, -0.4),
+    lineWidth=1,     colorSpace='rgb',  lineColor='darkgreen', fillColor='lightgreen',
+    opacity=1, depth=-3.0, interpolate=True)
+instr_done_label = visual.TextStim(win=win, name='instr_done_label',
+    text='Next...',
+    font='Arial',
+    units='height', pos=(0, -0.4), height=0.05, wrapWidth=None, ori=0, 
+    color='darkgreen', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+instr_done_touch = event.Mouse(win=win)
+x, y = [None, None]
+instr_done_touch.mouseClock = core.Clock()
