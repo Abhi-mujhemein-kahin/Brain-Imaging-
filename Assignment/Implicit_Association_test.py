@@ -544,3 +544,11 @@ for thisBlock in blocks:
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
+            
+# -------Ending Routine "ready"-------
+    for thisComponent in readyComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store data for blocks (TrialHandler)
+    # the Routine "ready" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
