@@ -813,3 +813,15 @@ for thisBlock in blocks:
         trials.addData('button_right.stopped', button_right.tStopRefresh)
         # the Routine "trial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
+# ------Prepare to start Routine "feedback"-------
+        continueRoutine = True
+        routineTimer.add(1.000000)
+        # update component parameters for each repeat
+        
+        if corr==0:
+            msg="oops"
+        else:
+            msg="+"
+        feedback_msg.setText(msg)
+        # keep track of which components have finished
+        feedbackComponents = [feedback_msg]
