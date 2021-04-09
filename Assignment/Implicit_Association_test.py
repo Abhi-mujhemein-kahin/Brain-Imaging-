@@ -279,3 +279,24 @@ for thisInstruct_page in instruct_pages:
             win.timeOnFlip(instructs_text, 'tStartRefresh')  # time at next scr refresh
             instructs_text.setAutoDraw(True)
         
+# *instruct_done* updates
+        waitOnFlip = False
+        if instruct_done.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instruct_done.frameNStart = frameN  # exact frame index
+            instruct_done.tStart = t  # local t and not account for scr refresh
+            instruct_done.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instruct_done, 'tStartRefresh')  # time at next scr refresh
+            instruct_done.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(instruct_done.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(instruct_done.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if instruct_done.status == STARTED and not waitOnFlip:
+            theseKeys = instruct_done.getKeys(keyList=['space'], waitRelease=False)
+            _instruct_done_allKeys.extend(theseKeys)
+            if len(_instruct_done_allKeys):
+                instruct_done.keys = _instruct_done_allKeys[-1].name  # just the last key pressed
+                instruct_done.rt = _instruct_done_allKeys[-1].rt
+                # a response ends the routine
+                continueRoutine = False
