@@ -300,3 +300,12 @@ for thisInstruct_page in instruct_pages:
                 instruct_done.rt = _instruct_done_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
+                
+ # *instr_done_button* updates
+        if instr_done_button.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_done_button.frameNStart = frameN  # exact frame index
+            instr_done_button.tStart = t  # local t and not account for scr refresh
+            instr_done_button.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr_done_button, 'tStartRefresh')  # time at next scr refresh
+            instr_done_button.setAutoDraw(True)
