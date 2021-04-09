@@ -269,3 +269,13 @@ for thisInstruct_page in instruct_pages:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+ # *instructs_text* updates
+        if instructs_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instructs_text.frameNStart = frameN  # exact frame index
+            instructs_text.tStart = t  # local t and not account for scr refresh
+            instructs_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instructs_text, 'tStartRefresh')  # time at next scr refresh
+            instructs_text.setAutoDraw(True)
+        
