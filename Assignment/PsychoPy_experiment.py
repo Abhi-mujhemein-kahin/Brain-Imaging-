@@ -320,9 +320,29 @@ while continueRoutine:
 
 # -------Ending Routine "instructions2"-------
 for thisComponent in instructions2Components:
-    if hasattr(thisComponent, "setAutoDraw"):
+    if hasattr(thisComponent, "setAutoDraw"): #determines whether stimulus should be automatically drawn in every flip.
         thisComponent.setAutoDraw(False)
 # the Routine "instructions2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# set up handler to look after randomisation of conditions etc
+trials = data.TrialHandler(nReps=1.0, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=data.importConditions('Dictatorgame.xlsx'),
+    seed=None, name='trials')
+ #Represents first set of conditions, wherein player names are anonymised.
+thisExp.addLoop(trials)  # add the loop to the experiment
+thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+if thisTrial != None:
+    for paramName in thisTrial:
+        exec('{} = thisTrial[paramName]'.format(paramName))
+
+for thisTrial in trials:
+    currentLoop = trials
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+    if thisTrial != None:
+        for paramName in thisTrial:
+            exec('{} = thisTrial[paramName]'.format(paramName))
+    
 
