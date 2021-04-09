@@ -234,4 +234,11 @@ for thisInstruct_page in instruct_pages:
     if thisInstruct_page != None:
         for paramName in thisInstruct_page:
             exec('{} = thisInstruct_page[paramName]'.format(paramName))
-
+            
+# ------Prepare to start Routine "instructions"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    instructs_text.setText(instruct_text)
+    instruct_done.keys = []
+    instruct_done.rt = []
+    _instruct_done_allKeys = []
