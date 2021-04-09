@@ -590,3 +590,18 @@ for thisBlock in blocks:
         gotValidClick = False  # until a click is received
         trial_label_left.setText(label_left)
         trial_label_right.setText(label_right)
+        
+# keep track of which components have finished
+        trialComponents = [fixation, image_stim, text_stim, key_resp, touch_resp, button_left, trial_label_left, button_right, trial_label_right]
+        for thisComponent in trialComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
