@@ -227,3 +227,11 @@ thisInstruct_page = instruct_pages.trialList[0]  # so we can initialise stimuli 
 if thisInstruct_page != None:
     for paramName in thisInstruct_page:
         exec('{} = thisInstruct_page[paramName]'.format(paramName))
+        
+for thisInstruct_page in instruct_pages:
+    currentLoop = instruct_pages
+    # abbreviate parameter names if possible (e.g. rgb = thisInstruct_page.rgb)
+    if thisInstruct_page != None:
+        for paramName in thisInstruct_page:
+            exec('{} = thisInstruct_page[paramName]'.format(paramName))
+
