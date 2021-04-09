@@ -430,3 +430,102 @@ for thisBlock in blocks:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     readyClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
+# -------Run Routine "ready"-------
+    while continueRoutine:
+        # get current time
+        t = readyClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=readyClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *main_ready_msg* updates
+        if main_ready_msg.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            main_ready_msg.frameNStart = frameN  # exact frame index
+            main_ready_msg.tStart = t  # local t and not account for scr refresh
+            main_ready_msg.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(main_ready_msg, 'tStartRefresh')  # time at next scr refresh
+            main_ready_msg.setAutoDraw(True)
+        
+        # *button_L* updates
+        if button_L.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            button_L.frameNStart = frameN  # exact frame index
+            button_L.tStart = t  # local t and not account for scr refresh
+            button_L.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(button_L, 'tStartRefresh')  # time at next scr refresh
+            button_L.setAutoDraw(True)
+        
+        # *ready_label_L* updates
+        if ready_label_L.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            ready_label_L.frameNStart = frameN  # exact frame index
+            ready_label_L.tStart = t  # local t and not account for scr refresh
+            ready_label_L.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(ready_label_L, 'tStartRefresh')  # time at next scr refresh
+            ready_label_L.setAutoDraw(True)
+        
+        # *button_R* updates
+        if button_R.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            button_R.frameNStart = frameN  # exact frame index
+            button_R.tStart = t  # local t and not account for scr refresh
+            button_R.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(button_R, 'tStartRefresh')  # time at next scr refresh
+            button_R.setAutoDraw(True)
+        
+        # *ready_label_R* updates
+        if ready_label_R.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            ready_label_R.frameNStart = frameN  # exact frame index
+            ready_label_R.tStart = t  # local t and not account for scr refresh
+            ready_label_R.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(ready_label_R, 'tStartRefresh')  # time at next scr refresh
+            ready_label_R.setAutoDraw(True)
+        # *ready_done_mouse* updates
+        if ready_done_mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            ready_done_mouse.frameNStart = frameN  # exact frame index
+            ready_done_mouse.tStart = t  # local t and not account for scr refresh
+            ready_done_mouse.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(ready_done_mouse, 'tStartRefresh')  # time at next scr refresh
+            ready_done_mouse.status = STARTED
+            ready_done_mouse.mouseClock.reset()
+            prevButtonState = ready_done_mouse.getPressed()  # if button is down already this ISN'T a new click
+        if ready_done_mouse.status == STARTED:  # only update if started and not finished!
+            buttons = ready_done_mouse.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    # check if the mouse was inside our 'clickable' objects
+                    gotValidClick = False
+                    for obj in [button_L, button_R]:
+                        if obj.contains(ready_done_mouse):
+                            gotValidClick = True
+                            ready_done_mouse.clicked_name.append(obj.name)
+                    if gotValidClick:  # abort routine on response
+                        continueRoutine = False
+        
+        # *ready_done* updates
+        waitOnFlip = False
+        if ready_done.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            ready_done.frameNStart = frameN  # exact frame index
+            ready_done.tStart = t  # local t and not account for scr refresh
+            ready_done.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(ready_done, 'tStartRefresh')  # time at next scr refresh
+            ready_done.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(ready_done.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(ready_done.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if ready_done.status == STARTED and not waitOnFlip:
+            theseKeys = ready_done.getKeys(keyList=['space'], waitRelease=False)
+            _ready_done_allKeys.extend(theseKeys)
+            if len(_ready_done_allKeys):
+                ready_done.keys = _ready_done_allKeys[-1].name  # just the last key pressed
+                ready_done.rt = _ready_done_allKeys[-1].rt
+                # a response ends the routine
+                continueRoutine = False
+        
