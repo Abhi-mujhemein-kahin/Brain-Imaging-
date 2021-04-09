@@ -398,3 +398,9 @@ if thisBlock != None:
     for paramName in thisBlock:
         exec('{} = thisBlock[paramName]'.format(paramName))
 
+for thisBlock in blocks:
+    currentLoop = blocks
+    # abbreviate parameter names if possible (e.g. rgb = thisBlock.rgb)
+    if thisBlock != None:
+        for paramName in thisBlock:
+            exec('{} = thisBlock[paramName]'.format(paramName))
