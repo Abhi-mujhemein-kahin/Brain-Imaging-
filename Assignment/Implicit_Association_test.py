@@ -318,3 +318,27 @@ for thisInstruct_page in instruct_pages:
             instr_done_label.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(instr_done_label, 'tStartRefresh')  # time at next scr refresh
             instr_done_label.setAutoDraw(True)
+            
+# *instr_done_touch* updates
+        if instr_done_touch.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_done_touch.frameNStart = frameN  # exact frame index
+            instr_done_touch.tStart = t  # local t and not account for scr refresh
+            instr_done_touch.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr_done_touch, 'tStartRefresh')  # time at next scr refresh
+            instr_done_touch.status = STARTED
+            instr_done_touch.mouseClock.reset()
+            prevButtonState = instr_done_touch.getPressed()  # if button is down already this ISN'T a new click
+        if instr_done_touch.status == STARTED:  # only update if started and not finished!
+            buttons = instr_done_touch.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    # check if the mouse was inside our 'clickable' objects
+                    gotValidClick = False
+                    for obj in [instr_done_button]:
+                        if obj.contains(instr_done_touch):
+                            gotValidClick = True
+                            instr_done_touch.clicked_name.append(obj.name)
+                    if gotValidClick:  # abort routine on response
+                        continueRoutine = False
