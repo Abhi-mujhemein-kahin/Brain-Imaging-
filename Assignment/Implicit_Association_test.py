@@ -192,3 +192,12 @@ trial_label_right = visual.TextStim(win=win, name='trial_label_right',
     languageStyle='LTR',
     depth=-9.0);
 
+# Initialize components for Routine "feedback"
+feedbackClock = core.Clock()
+feedback_msg = visual.TextStim(win=win, name='feedback_msg',
+    text='',
+    font='Arial',
+    units='height', pos=[0, 0], height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
