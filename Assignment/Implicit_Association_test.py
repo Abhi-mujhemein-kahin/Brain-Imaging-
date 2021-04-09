@@ -805,4 +805,11 @@ for thisBlock in blocks:
                 corr = 1
             else:
                 corr = 0
-        
+ thisExp.addData('rt',  rt)
+        thisExp.addData('corr', corr)
+        trials.addData('button_left.started', button_left.tStartRefresh)
+        trials.addData('button_left.stopped', button_left.tStopRefresh)
+        trials.addData('button_right.started', button_right.tStartRefresh)
+        trials.addData('button_right.stopped', button_right.tStopRefresh)
+        # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
