@@ -260,3 +260,12 @@ for thisInstruct_page in instruct_pages:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     instructionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
+    
+# -------Run Routine "instructions"-------
+    while continueRoutine:
+        # get current time
+        t = instructionsClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=instructionsClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
