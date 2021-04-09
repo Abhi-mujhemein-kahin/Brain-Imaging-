@@ -837,3 +837,32 @@ for thisComponent in feedbackComponents:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         feedbackClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
+# -------Run Routine "feedback"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = feedbackClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=feedbackClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *feedback_msg* updates
+            if feedback_msg.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                feedback_msg.frameNStart = frameN  # exact frame index
+                feedback_msg.tStart = t  # local t and not account for scr refresh
+                feedback_msg.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(feedback_msg, 'tStartRefresh')  # time at next scr refresh
+                feedback_msg.setAutoDraw(True)
+            if feedback_msg.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > feedback_msg.tStartRefresh + 1-frameTolerance:
+                    # keep track of stop time/frame for later
+                    feedback_msg.tStop = t  # not accounting for scr refresh
+                    feedback_msg.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(feedback_msg, 'tStopRefresh')  # time at next scr refresh
+                    feedback_msg.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
