@@ -385,4 +385,16 @@ for thisInstruct_page in instruct_pages:
     # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
 # completed 1 repeats of 'instruct_pages'
-    
+
+# set up handler to look after randomisation of conditions etc
+blocks = data.TrialHandler(nReps=1, method='sequential', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=data.importConditions('blocks_order1.xlsx'),
+    seed=None, name='blocks')
+thisExp.addLoop(blocks)  # add the loop to the experiment
+thisBlock = blocks.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisBlock.rgb)
+if thisBlock != None:
+    for paramName in thisBlock:
+        exec('{} = thisBlock[paramName]'.format(paramName))
+
