@@ -473,6 +473,70 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 instructions2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
+# -------Run Routine "instructions2"-------
+while continueRoutine:
+    # get current time
+    t = instructions2Clock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=instructions2Clock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_6* updates
+    if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_6.frameNStart = frameN  # exact frame index
+        text_6.tStart = t  # local t and not account for scr refresh
+        text_6.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+        text_6.setAutoDraw(True)
+    
+    # *key_resp_2* updates
+    if key_resp_2.status == NOT_STARTED and t >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_2.frameNStart = frameN  # exact frame index
+        key_resp_2.tStart = t  # local t and not account for scr refresh
+        key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
+        key_resp_2.status = STARTED
+        # keyboard checking is just starting
+        key_resp_2.clock.reset()  # now t=0
+        key_resp_2.clearEvents(eventType='keyboard')
+    if key_resp_2.status == STARTED:
+        theseKeys = key_resp_2.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_2_allKeys.extend(theseKeys)
+        if len(_key_resp_2_allKeys):
+            key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
+            key_resp_2.rt = _key_resp_2_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in instructions2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "instructions2"-------
+for thisComponent in instructions2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# the Routine "instructions2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+
+
 
     
 
