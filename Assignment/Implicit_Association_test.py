@@ -201,3 +201,15 @@ feedback_msg = visual.TextStim(win=win, name='feedback_msg',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+
+# Initialize components for Routine "end_thanks"
+end_thanksClock = core.Clock()
+thanks_text = visual.TextStim(win=win, name='thanks_text',
+    text='The End. \n \nThank you for your participation.',
+    font='Arial',
+    units='height', pos=[0, 0], height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+
