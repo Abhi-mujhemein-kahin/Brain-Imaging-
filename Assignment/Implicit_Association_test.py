@@ -528,4 +528,7 @@ for thisBlock in blocks:
                 ready_done.rt = _ready_done_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
-        
+    
+# check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
