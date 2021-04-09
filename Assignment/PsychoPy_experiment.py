@@ -452,6 +452,27 @@ for thisTrial in trials:
     
 # completed 1.0 repeats of 'trials'
 
+# ------Prepare to start Routine "instructions2"-------
+continueRoutine = True
+# update component parameters for each repeat
+key_resp_2.keys = []
+key_resp_2.rt = []
+_key_resp_2_allKeys = []
+# keep track of which components have finished
+instructions2Components = [text_6, key_resp_2]
+for thisComponent in instructions2Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+instructions2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
 
     
 
