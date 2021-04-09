@@ -309,3 +309,12 @@ for thisInstruct_page in instruct_pages:
             instr_done_button.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(instr_done_button, 'tStartRefresh')  # time at next scr refresh
             instr_done_button.setAutoDraw(True)
+ 
+ # *instr_done_label* updates
+        if instr_done_label.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_done_label.frameNStart = frameN  # exact frame index
+            instr_done_label.tStart = t  # local t and not account for scr refresh
+            instr_done_label.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr_done_label, 'tStartRefresh')  # time at next scr refresh
+            instr_done_label.setAutoDraw(True)
