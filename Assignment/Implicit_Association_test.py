@@ -777,3 +777,20 @@ for thisBlock in blocks:
                key_resp.corr = 1;  # correct non-response
             else:
                key_resp.corr = 0;  # failed to respond (incorrectly)
+# store data for trials (TrialHandler)
+        trials.addData('key_resp.keys',key_resp.keys)
+        trials.addData('key_resp.corr', key_resp.corr)
+        if key_resp.keys != None:  # we had a response
+            trials.addData('key_resp.rt', key_resp.rt)
+        trials.addData('key_resp.started', key_resp.tStartRefresh)
+        trials.addData('key_resp.stopped', key_resp.tStopRefresh)
+        # store data for trials (TrialHandler)
+        if len(touch_resp.x): trials.addData('touch_resp.x', touch_resp.x[0])
+        if len(touch_resp.y): trials.addData('touch_resp.y', touch_resp.y[0])
+        if len(touch_resp.leftButton): trials.addData('touch_resp.leftButton', touch_resp.leftButton[0])
+        if len(touch_resp.midButton): trials.addData('touch_resp.midButton', touch_resp.midButton[0])
+        if len(touch_resp.rightButton): trials.addData('touch_resp.rightButton', touch_resp.rightButton[0])
+        if len(touch_resp.time): trials.addData('touch_resp.time', touch_resp.time[0])
+        if len(touch_resp.clicked_name): trials.addData('touch_resp.clicked_name', touch_resp.clicked_name[0])
+        trials.addData('touch_resp.started', touch_resp.tStart)
+        trials.addData('touch_resp.stopped', touch_resp.tStop)
