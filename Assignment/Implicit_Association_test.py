@@ -769,3 +769,11 @@ for thisBlock in blocks:
         trials.addData('image_stim.stopped', image_stim.tStopRefresh)
         trials.addData('text_stim.started', text_stim.tStartRefresh)
         trials.addData('text_stim.stopped', text_stim.tStopRefresh)
+# check responses
+        if key_resp.keys in ['', [], None]:  # No response was made
+            key_resp.keys = None
+            # was no response the correct answer?!
+            if str(CorrAns).lower() == 'none':
+               key_resp.corr = 1;  # correct non-response
+            else:
+               key_resp.corr = 0;  # failed to respond (incorrectly)
