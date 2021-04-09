@@ -1,0 +1,271 @@
+1.1286 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+11.7202 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+15.5716 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000022BC4256C88>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000022BC42B8668>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.5722 	EXP 	window1: mouseVisible = True
+15.5723 	EXP 	window1: recordFrameIntervals = False
+15.7368 	EXP 	window1: recordFrameIntervals = True
+15.9209 	EXP 	window1: recordFrameIntervals = False
+16.1971 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.12941176, 0.86666667, 0.12941176]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.2902 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+16.2933 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.35686275, 0.69411765, 0.80392157]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0.  , 0.75]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+16.3015 	EXP 	window1: mouseVisible = True
+16.3569 	EXP 	Created slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=True, font='Arial', granularity=1.0, labelHeight=0.07, labelWrapWidth=None, labels=tuple(...), name='slider', opacity=None, pos=(0, -0.3), readOnly=False, self=UNKNOWN, size=(0.8, 0.5), style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='norm', win=Window(...))
+16.4308 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+16.4602 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Please Wait', units='height', win=Window(...), wrapWidth=1)
+16.4626 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.35686275, 0.69411765, 0.80392157]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0.  , 0.75]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+16.4694 	EXP 	window1: mouseVisible = True
+16.5890 	EXP 	Created slider_2 = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=True, font='Arial', granularity=1.0, labelHeight=0.05, labelWrapWidth=None, labels=tuple(...), name='slider_2', opacity=None, pos=(0, -0.3), readOnly=False, self=UNKNOWN, size=(0.8, 0.5), style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='norm', win=Window(...))
+16.6346 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='THANKS FOR YOUR PARTICIPATION!', units='height', win=Window(...), wrapWidth=1)
+16.6771 	EXP 	slider: autoLog = True
+16.6771 	EXP 	slider: markerPos = None
+16.6771 	EXP 	slider: rating = None
+16.6771 	EXP 	slider: markerPos = None
+16.6771 	EXP 	slider: contrast = 1.0
+16.6771 	EXP 	slider: autoLog = True
+16.6771 	EXP 	slider: styleTweaks = []
+16.6771 	EXP 	slider: style = 'slider'
+16.6771 	EXP 	slider: styleTweaks = ['triangleMarker']
+16.6771 	EXP 	slider_2: autoLog = True
+16.6771 	EXP 	slider_2: markerPos = None
+16.6771 	EXP 	slider_2: rating = None
+16.6771 	EXP 	slider_2: markerPos = None
+16.6771 	EXP 	slider_2: contrast = 1.0
+16.6771 	EXP 	slider_2: autoLog = True
+16.6771 	EXP 	slider_2: styleTweaks = []
+16.6771 	EXP 	slider_2: style = 'slider'
+16.6771 	EXP 	slider_2: styleTweaks = ['triangleMarker']
+16.6771 	EXP 	text: autoDraw = True
+18.4318 	DATA 	Keypress: space
+18.4377 	EXP 	text: autoDraw = False
+18.4377 	EXP 	text_6: autoDraw = True
+18.8964 	DATA 	Keypress: space
+18.9339 	EXP 	Imported Dictatorgame.xlsx as conditions, 5 conditions, 1 params
+18.9350 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+18.9358 	EXP 	New trial (rep=0, index=0): {'Name': 'Player 3'}
+18.9661 	EXP 	text_6: autoDraw = False
+18.9661 	EXP 	text_2: text = 'Player 3'
+18.9661 	EXP 	slider: markerPos = None
+18.9661 	EXP 	slider: markerPos = None
+18.9661 	EXP 	slider: rating = None
+18.9661 	EXP 	text_2: autoDraw = True
+20.0337 	EXP 	slider: autoDraw = True
+22.8628 	DATA 	Mouse: Left button down, pos=(643,493)
+22.9103 	EXP 	slider: markerPos = 2.3310185185185186
+22.9391 	EXP 	slider: markerPos = 2.3310185185185186
+22.9673 	EXP 	slider: markerPos = 2.3310185185185186
+22.9964 	EXP 	slider: markerPos = 2.3310185185185186
+23.0248 	EXP 	slider: markerPos = 2.3310185185185186
+23.0673 	DATA 	Mouse:  Left button up, pos=(643,493)
+23.0708 	EXP 	slider: markerPos = 2.3310185185185186
+23.1177 	EXP 	slider: markerPos = 2.0
+23.1177 	EXP 	slider: rating = 2.0
+23.8779 	EXP 	New trial (rep=0, index=1): {'Name': 'Player 2'}
+23.8890 	DATA 	Keypress: space
+23.8919 	EXP 	text_2: autoDraw = False
+23.8919 	EXP 	slider: autoDraw = False
+23.8919 	EXP 	text_2: text = 'Player 2'
+23.8919 	EXP 	slider: markerPos = None
+23.8919 	EXP 	slider: markerPos = None
+23.8919 	EXP 	slider: rating = None
+23.8919 	EXP 	text_2: autoDraw = True
+24.9155 	EXP 	slider: autoDraw = True
+26.5503 	DATA 	Mouse: Left button down, pos=(722,481)
+26.5996 	EXP 	slider: markerPos = 3.2453703703703702
+26.6296 	EXP 	slider: markerPos = 3.2453703703703702
+26.6767 	EXP 	slider: markerPos = 3.2453703703703702
+26.7232 	EXP 	slider: markerPos = 3.2453703703703702
+26.7505 	DATA 	Mouse:  Left button up, pos=(722,481)
+26.7539 	EXP 	slider: markerPos = 3.2453703703703702
+26.7854 	EXP 	slider: markerPos = 3.0
+26.7854 	EXP 	slider: rating = 3.0
+27.2079 	DATA 	Keypress: space
+27.2379 	EXP 	New trial (rep=0, index=2): {'Name': 'Player 4'}
+27.2515 	EXP 	text_2: autoDraw = False
+27.2515 	EXP 	slider: autoDraw = False
+27.2515 	EXP 	text_2: text = 'Player 4'
+27.2515 	EXP 	slider: markerPos = None
+27.2515 	EXP 	slider: markerPos = None
+27.2515 	EXP 	slider: rating = None
+27.2515 	EXP 	text_2: autoDraw = True
+28.2824 	EXP 	slider: autoDraw = True
+32.7064 	DATA 	Mouse: Left button down, pos=(784,499)
+32.7470 	EXP 	slider: markerPos = 3.962962962962963
+32.7761 	EXP 	slider: markerPos = 3.962962962962963
+32.8221 	EXP 	slider: markerPos = 3.962962962962963
+32.8673 	EXP 	slider: markerPos = 3.962962962962963
+32.8973 	EXP 	slider: markerPos = 3.962962962962963
+32.9390 	DATA 	Mouse:  Left button up, pos=(784,499)
+32.9425 	EXP 	slider: markerPos = 3.962962962962963
+32.9892 	EXP 	slider: markerPos = 4.0
+32.9892 	EXP 	slider: rating = 4.0
+33.3574 	EXP 	New trial (rep=0, index=3): {'Name': 'Player 5'}
+33.3698 	DATA 	Keypress: space
+33.3726 	EXP 	text_2: autoDraw = False
+33.3726 	EXP 	slider: autoDraw = False
+33.3726 	EXP 	text_2: text = 'Player 5'
+33.3726 	EXP 	slider: markerPos = None
+33.3726 	EXP 	slider: markerPos = None
+33.3726 	EXP 	slider: rating = None
+33.3726 	EXP 	text_2: autoDraw = True
+34.4027 	EXP 	slider: autoDraw = True
+36.4996 	DATA 	Mouse: Left button down, pos=(552,477)
+36.5323 	EXP 	slider: markerPos = 1.277777777777778
+36.5617 	EXP 	slider: markerPos = 1.277777777777778
+36.5915 	EXP 	slider: markerPos = 1.277777777777778
+36.6204 	EXP 	slider: markerPos = 1.277777777777778
+36.6499 	EXP 	slider: markerPos = 1.277777777777778
+36.6786 	EXP 	slider: markerPos = 1.277777777777778
+36.7210 	DATA 	Mouse:  Left button up, pos=(552,477)
+36.7245 	EXP 	slider: markerPos = 1.277777777777778
+36.7716 	EXP 	slider: markerPos = 1.0
+36.7716 	EXP 	slider: rating = 1.0
+37.1792 	DATA 	Keypress: space
+37.2249 	EXP 	New trial (rep=0, index=4): {'Name': 'Player 1'}
+37.2387 	EXP 	text_2: autoDraw = False
+37.2387 	EXP 	slider: autoDraw = False
+37.2387 	EXP 	text_2: text = 'Player 1'
+37.2387 	EXP 	slider: markerPos = None
+37.2387 	EXP 	slider: markerPos = None
+37.2387 	EXP 	slider: rating = None
+37.2387 	EXP 	text_2: autoDraw = True
+38.2630 	EXP 	slider: autoDraw = True
+41.7557 	DATA 	Mouse: Left button down, pos=(716,496)
+41.7870 	EXP 	slider: markerPos = 3.175925925925926
+41.8159 	EXP 	slider: markerPos = 3.175925925925926
+41.8444 	EXP 	slider: markerPos = 3.175925925925926
+41.8730 	EXP 	slider: markerPos = 3.175925925925926
+41.9018 	EXP 	slider: markerPos = 3.175925925925926
+41.9296 	EXP 	slider: markerPos = 3.175925925925926
+41.9569 	DATA 	Mouse:  Left button up, pos=(716,496)
+41.9602 	EXP 	slider: markerPos = 3.175925925925926
+41.9896 	EXP 	slider: markerPos = 3.0
+41.9896 	EXP 	slider: rating = 3.0
+42.4410 	DATA 	Keypress: space
+42.4837 	EXP 	text_2: autoDraw = False
+42.4837 	EXP 	slider: autoDraw = False
+42.4837 	EXP 	text_6: autoDraw = True
+44.6268 	DATA 	Keypress: space
+44.6497 	EXP 	text_6: autoDraw = False
+44.6497 	EXP 	text_5: autoDraw = True
+45.5066 	DATA 	Keypress: space
+45.6555 	EXP 	Imported Dictator 2.xlsx as conditions, 5 conditions, 1 params
+45.6565 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+45.6573 	EXP 	New trial (rep=0, index=0): {'Name2': 'Mustafa Sheikh'}
+45.7013 	EXP 	text_5: autoDraw = False
+45.7013 	EXP 	text_5: autoDraw = False
+45.7013 	EXP 	text_3: text = 'Mustafa Sheikh'
+45.7013 	EXP 	slider_2: markerPos = None
+45.7013 	EXP 	slider_2: markerPos = None
+45.7013 	EXP 	slider_2: rating = None
+45.7013 	EXP 	text_3: autoDraw = True
+46.7227 	EXP 	slider_2: autoDraw = True
+49.9902 	DATA 	Mouse: Left button down, pos=(717,496)
+50.0320 	EXP 	slider_2: markerPos = 3.1875
+50.0788 	EXP 	slider_2: markerPos = 3.1875
+50.1295 	EXP 	slider_2: markerPos = 3.1875
+50.1587 	EXP 	slider_2: markerPos = 3.1875
+50.1884 	EXP 	slider_2: markerPos = 3.1875
+50.2161 	DATA 	Mouse:  Left button up, pos=(717,496)
+50.2194 	EXP 	slider_2: markerPos = 3.1875
+50.2509 	EXP 	slider_2: markerPos = 3.0
+50.2509 	EXP 	slider_2: rating = 3.0
+50.8096 	DATA 	Keypress: space
+50.8205 	EXP 	New trial (rep=0, index=1): {'Name2': 'Fiza Nasir'}
+50.8396 	EXP 	text_3: autoDraw = False
+50.8396 	EXP 	slider_2: autoDraw = False
+50.8396 	EXP 	text_3: text = 'Fiza Nasir'
+50.8396 	EXP 	slider_2: markerPos = None
+50.8396 	EXP 	slider_2: markerPos = None
+50.8396 	EXP 	slider_2: rating = None
+50.8396 	EXP 	text_3: autoDraw = True
+51.8604 	EXP 	slider_2: autoDraw = True
+55.2657 	DATA 	Mouse: Left button down, pos=(770,487)
+55.3057 	EXP 	slider_2: markerPos = 3.8009259259259256
+55.3475 	EXP 	slider_2: markerPos = 3.8009259259259256
+55.3800 	EXP 	slider_2: markerPos = 3.8009259259259256
+55.4123 	EXP 	slider_2: markerPos = 3.8009259259259256
+55.4442 	EXP 	slider_2: markerPos = 3.8009259259259256
+55.4757 	EXP 	slider_2: markerPos = 3.8009259259259256
+55.4817 	DATA 	Mouse:  Left button up, pos=(770,487)
+55.5082 	EXP 	slider_2: markerPos = 4.0
+55.5082 	EXP 	slider_2: rating = 4.0
+56.2260 	DATA 	Keypress: space
+56.2383 	EXP 	New trial (rep=0, index=2): {'Name2': 'Yash Dhawan'}
+56.2767 	EXP 	text_3: autoDraw = False
+56.2767 	EXP 	slider_2: autoDraw = False
+56.2767 	EXP 	text_3: text = 'Yash Dhawan'
+56.2767 	EXP 	slider_2: markerPos = None
+56.2767 	EXP 	slider_2: markerPos = None
+56.2767 	EXP 	slider_2: rating = None
+56.2767 	EXP 	text_3: autoDraw = True
+57.2925 	EXP 	slider_2: autoDraw = True
+58.7821 	DATA 	Mouse: Left button down, pos=(594,475)
+58.8154 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.8451 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.8751 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.9043 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.9339 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.9636 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.9939 	EXP 	slider_2: markerPos = 1.7638888888888888
+58.9992 	DATA 	Mouse:  Left button up, pos=(594,475)
+59.0241 	EXP 	slider_2: markerPos = 2.0
+59.0241 	EXP 	slider_2: rating = 2.0
+59.9846 	DATA 	Keypress: space
+59.9943 	EXP 	New trial (rep=0, index=3): {'Name2': 'Bhavana Shankar'}
+60.0126 	EXP 	text_3: autoDraw = False
+60.0126 	EXP 	slider_2: autoDraw = False
+60.0126 	EXP 	text_3: text = 'Bhavana Shankar'
+60.0126 	EXP 	slider_2: markerPos = None
+60.0126 	EXP 	slider_2: markerPos = None
+60.0126 	EXP 	slider_2: rating = None
+60.0126 	EXP 	text_3: autoDraw = True
+61.0275 	EXP 	slider_2: autoDraw = True
+66.2569 	DATA 	Mouse: Left button down, pos=(552,493)
+66.2918 	EXP 	slider_2: markerPos = 1.277777777777778
+66.3229 	EXP 	slider_2: markerPos = 1.277777777777778
+66.3696 	EXP 	slider_2: markerPos = 1.277777777777778
+66.4150 	EXP 	slider_2: markerPos = 1.277777777777778
+66.4602 	EXP 	slider_2: markerPos = 1.277777777777778
+66.5022 	DATA 	Mouse:  Left button up, pos=(552,493)
+66.5060 	EXP 	slider_2: markerPos = 1.277777777777778
+66.5565 	EXP 	slider_2: markerPos = 1.0
+66.5565 	EXP 	slider_2: rating = 1.0
+68.6897 	DATA 	Mouse: Left button down, pos=(606,369)
+68.7384 	EXP 	slider_2: markerPos = 1.902777777777778
+68.7815 	EXP 	slider_2: markerPos = 1.902777777777778
+68.8097 	EXP 	slider_2: markerPos = 1.902777777777778
+68.8381 	EXP 	slider_2: markerPos = 1.902777777777778
+68.8665 	EXP 	slider_2: markerPos = 1.902777777777778
+68.8948 	EXP 	slider_2: markerPos = 1.902777777777778
+68.9201 	DATA 	Mouse:  Left button up, pos=(606,369)
+68.9233 	EXP 	slider_2: markerPos = 1.902777777777778
+68.9521 	EXP 	slider_2: markerPos = 2.0
+68.9521 	EXP 	slider_2: rating = 2.0
+69.8839 	EXP 	New trial (rep=0, index=4): {'Name2': 'Malcolm Adam'}
+69.9022 	DATA 	Keypress: space
+69.9050 	EXP 	text_3: autoDraw = False
+69.9050 	EXP 	slider_2: autoDraw = False
+69.9050 	EXP 	text_3: text = 'Malcolm Adam'
+69.9050 	EXP 	slider_2: markerPos = None
+69.9050 	EXP 	slider_2: markerPos = None
+69.9050 	EXP 	slider_2: rating = None
+69.9050 	EXP 	text_3: autoDraw = True
+70.9246 	EXP 	slider_2: autoDraw = True
+75.5583 	DATA 	Mouse: Left button down, pos=(541,486)
+75.5914 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.6210 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.6504 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.6800 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.7095 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.7399 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.7688 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.7958 	DATA 	Mouse:  Left button up, pos=(541,486)
+75.7992 	EXP 	slider_2: markerPos = 1.1504629629629632
+75.8440 	EXP 	slider_2: markerPos = 1.0
+75.8440 	EXP 	slider_2: rating = 1.0
+77.0218 	DATA 	Keypress: space
+77.0251 	EXP 	text_3: autoDraw = False
+77.0251 	EXP 	slider_2: autoDraw = False
+77.0251 	EXP 	text_4: autoDraw = True
+81.1532 	DATA 	Keypress: escape
+83.7089 	EXP 	window1: mouseVisible = True
