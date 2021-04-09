@@ -358,3 +358,22 @@ for thisInstruct_page in instruct_pages:
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
+  # -------Ending Routine "instructions"-------
+    for thisComponent in instructionsComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store data for instruct_pages (TrialHandler)
+    x, y = instr_done_touch.getPos()
+    buttons = instr_done_touch.getPressed()
+    if sum(buttons):
+        # check if the mouse was inside our 'clickable' objects
+        gotValidClick = False
+        for obj in [instr_done_button]:
+            if obj.contains(instr_done_touch):
+                gotValidClick = True
+                instr_done_touch.clicked_name.append(obj.name)
+    instruct_pages.addData('instr_done_touch.x', x)
+    instruct_pages.addData('instr_done_touch.y', y)
+    instruct_pages.addData('instr_done_touch.leftButton', buttons[0])
+    instruct_pages.addData('instr_done_touch.midButton', buttons[1])
+    instruct_pages.addData('instr_done_touch.rightButton', buttons[2])
