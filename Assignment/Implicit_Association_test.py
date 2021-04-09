@@ -759,3 +759,13 @@ for thisBlock in blocks:
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
+ # -------Ending Routine "trial"-------
+        for thisComponent in trialComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        trials.addData('fixation.started', fixation.tStartRefresh)
+        trials.addData('fixation.stopped', fixation.tStopRefresh)
+        trials.addData('image_stim.started', image_stim.tStartRefresh)
+        trials.addData('image_stim.stopped', image_stim.tStopRefresh)
+        trials.addData('text_stim.started', text_stim.tStartRefresh)
+        trials.addData('text_stim.stopped', text_stim.tStopRefresh)
