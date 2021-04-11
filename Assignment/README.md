@@ -1,5 +1,5 @@
 This experiment contains the Dictator game and the Arab-Muslim Implicit Association test.
-The Dictator game The dictator game is a one-shot economic experiment which is popularly used as a measure of altruism. 
+The Dictator game is a one-shot economic experiment which is popularly used as a measure of altruism. 
 The player is instructed that they have a certain amount as part of their endowment, 
 and they have the opportunity to give the whole or some part of their endowment to a responder. 
 The responder has no option but to accept the offer made by the dictator. 
